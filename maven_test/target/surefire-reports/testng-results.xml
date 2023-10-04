@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-04T16:48:21Z" name="Suite" finished-at="2023-10-04T16:48:21Z" duration-ms="15">
+    <groups>
+    </groups>
+    <test started-at="2023-10-04T16:48:21Z" name="Test1" finished-at="2023-10-04T16:48:21Z" duration-ms="15">
+      <class name="com.oudp.platform.test_oudpDev">
+        <test-method signature="TestOUDPDevFinalName()[pri:0, instance:com.oudp.platform.test_oudpDev@2accdbb5]" started-at="2023-10-04T16:48:21Z" name="TestOUDPDevFinalName" finished-at="2023-10-04T16:48:21Z" duration-ms="7" status="PASS">
+        </test-method> <!-- TestOUDPDevFinalName -->
+        <test-method signature="TestOUDPDevFirstName()[pri:0, instance:com.oudp.platform.test_oudpDev@2accdbb5]" started-at="2023-10-04T16:48:21Z" name="TestOUDPDevFirstName" finished-at="2023-10-04T16:48:21Z" duration-ms="0" status="PASS">
+        </test-method> <!-- TestOUDPDevFirstName -->
+        <test-method signature="TestOUDPDevLastName()[pri:0, instance:com.oudp.platform.test_oudpDev@2accdbb5]" started-at="2023-10-04T16:48:21Z" name="TestOUDPDevLastName" finished-at="2023-10-04T16:48:21Z" duration-ms="0" status="PASS">
+        </test-method> <!-- TestOUDPDevLastName -->
+      </class> <!-- com.oudp.platform.test_oudpDev -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>

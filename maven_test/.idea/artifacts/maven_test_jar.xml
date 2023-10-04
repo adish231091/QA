@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="maven_test:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/maven_test_jar</output-path>
+    <root id="archive" name="maven_test.jar">
+      <element id="module-output" name="maven_test" />
+      <element id="module-test-output" name="maven_test" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/json/json/20220924/json-20220924.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/junit/junit/4.10/junit-4.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/testng/testng/6.5.1/testng-6.5.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/beust/jcommander/1.12/jcommander-1.12.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
