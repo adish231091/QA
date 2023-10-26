@@ -6,4 +6,10 @@
             <class name="com.oudp.platform.test_oudpDev"/>
         </classes>
     </test>
+
+    <test name="Test2">
+        <classes>
+            <class name="com.oudp.platform.test_oudpQA"/>
+        </classes>
+    </test>
 </suite>
