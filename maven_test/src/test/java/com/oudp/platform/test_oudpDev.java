@@ -27,7 +27,7 @@ public class test_oudpDev {
         System.out.println("Checking LastName more than 5 Char's");
         boolean var1= true;
         System.out.println("variable test");
-        assertEquals(var1,oudpDev.LastName("SHARMANADISHSDSDSDS"));
+        assertEquals(var1,oudpDev.LastName("SHARMANADISHSDSDSDS12343"));
     }
 
 }
