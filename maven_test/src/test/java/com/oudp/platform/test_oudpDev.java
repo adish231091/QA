@@ -30,4 +30,12 @@ public class test_oudpDev {
         assertEquals(var1,oudpDev.LastName("SHARMANADISHSDSDSDS12343"));
     }
 
+    @Test
+    public void TestOUDPFirstName()
+    {
+        System.out.println("Checking first name....");
+        boolean status = oudpDev.FirstName("");
+        assertEquals(status,true);
+    }
+
 }
