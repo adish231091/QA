@@ -59,7 +59,7 @@ pipeline
                 {
                     steps
                     {
-                        echo "Running QA automation tests -> playground1.xml file"
+                        echo "Running QA automation tests -> playground1.xml file."
                         sh (" cd ${env.WORKSPACE}/maven_test && /usr/local/bin/mvn test -Dsurefire.suiteXmlFiles=playground1.xml")
 
                     }
