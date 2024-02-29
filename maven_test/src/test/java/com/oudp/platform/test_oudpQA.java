@@ -10,4 +10,12 @@ public class test_oudpQA {
         assertEquals(var,oudpDev.FirstName("   asdsadasd"));
     }
 
+    @Test
+    public void Testdummy()
+    {
+        System.out.println("Checking FirstName is empty Or Not !!!!");
+        boolean var= false;
+        assertEquals(var,oudpDev.FirstName("   asdsadasd"));
+    }
+
 }

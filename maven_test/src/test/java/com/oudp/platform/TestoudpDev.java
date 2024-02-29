@@ -2,7 +2,7 @@ package com.oudp.platform;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 
-public class test_oudpDev {
+public class TestoudpDev {
 
     @Test
     public void TestOUDPDevFinalName()
