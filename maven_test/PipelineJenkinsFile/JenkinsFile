@@ -1,0 +1,71 @@
+pipeline
+{
+    agent any
+
+        stages
+        {
+                stage('CheckOut')
+                {
+                    steps
+                    {
+    git branch: 'qa_master', credentialsId: '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', url: "https://github.com/adish231091/QA.git"
+                    }
+                }
+
+                stage('Build')
+                {
+                    steps
+                    {
+                        echo "Giving 777 permission to workspace folder !!!!"
+                        sh ("chmod -R 777 ${env.WORKSPACE}")
+
+                        echo "Maven Clean Project ............."
+                        sh (" cd ${env.WORKSPACE}/maven_test && /usr/local/bin/mvn clean")
+
+                        echo "Maven Compile Project ............."
+                        sh (" cd ${env.WORKSPACE}/maven_test && /usr/local/bin/mvn compile")
+
+                    }
+                }
+
+                stage('Unit Test')
+                {
+                    steps
+                    {
+                        echo "Install Maven Dependencies & JAR"
+                        sh ("cd ${env.WORKSPACE}/maven_test && /usr/local/bin/mvn install")
+
+                        echo "Triggered Dev Test -> playground.xml  !!!!!"
+                        sh (" cd ${env.WORKSPACE}/maven_test && /usr/local/bin/mvn test -Dsurefire.suiteXmlFiles=playground.xml")
+                    }
+                }
+
+                stage('Deploy to Test Server')
+                {
+                    steps
+                    {
+                        echo "Clearing Test Server location"
+                        sh ("rm -rf /Users/adishsharma/Desktop/mavenMCPS/*")
+
+                        echo "Deploy MAVEN JAR to Test Server Location"
+                        sh ("cp ${env.WORKSPACE}/maven_test/target/maven_test-1.0-SNAPSHOT.jar /Users/adishsharma/Desktop/mavenMCPS")
+
+                        sh ("chmod 777 /Users/adishsharma/Desktop/mavenMCPS")
+
+                    }
+                }
+
+                stage('Trigger QA tests')
+                {
+                    steps
+                    {
+                        echo "Running QA automation tests -> playground1.xml file"
+                        sh (" cd ${env.WORKSPACE}/maven_test && /usr/local/bin/mvn test -Dsurefire.suiteXmlFiles=playground1.xml")
+
+                    }
+               }
+
+
+        }
+
+}
