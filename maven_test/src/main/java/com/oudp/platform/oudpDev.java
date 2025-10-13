@@ -7,7 +7,7 @@ public class oudpDev
         String firstName = str1;
         if (firstName.isEmpty())
         {
-            return true;
+            return false;
         }
         else {
             return false;
