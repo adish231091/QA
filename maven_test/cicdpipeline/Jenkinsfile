@@ -28,7 +28,7 @@ pipeline
                     def para1 = params.variable1
                     def para2 = params.variable2
                     def path = "/Users/adishsharma/Desktop/mavenQA/QA/maven_test/src/main"
-                    sh "sh ${env.WORKSPACE}/maven_test/src/main/test.sh ${para1} ${para2}"
+                    sh "sh ${env.WORKSPACE}/maven_test/src/main/test.sh ${para1} ${para2} ${env.WORKSPACE}"
                 }
             }
         }
