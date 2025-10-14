@@ -19,7 +19,7 @@ pipeline
             }
         }
 
-        stage("Execute script")
+        stage("Execute scripts")
         {
             steps
             {
