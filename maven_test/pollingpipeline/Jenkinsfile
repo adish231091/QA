@@ -1,0 +1,21 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage("Clean Workspace")
+        {
+            steps
+            {
+                cleanWs()
+            }
+        }
+        stage("Tests Polling")
+        {
+            steps
+            {
+                echo "commit happen , build started !!!!"
+            }
+        }
+    }
+}
