@@ -3,7 +3,7 @@ pipeline
     agent any
     stages
     {
-        stage("Clean Workspace")
+        stage("Clean Workspaces")
         {
             steps
             {
