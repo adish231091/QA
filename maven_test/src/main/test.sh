@@ -13,7 +13,7 @@ echo "var3 is $var3"
 var3_str_length=${#var3}
 if [ $var3_str_length -gt 5 ]
 then
-    echo "Pass"
+    echo "Pass completely"
     sh ${path}/maven_test/src/main/prod.sh
 else
   echo "Fail"
